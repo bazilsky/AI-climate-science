@@ -2,7 +2,7 @@
 
 ## Introduction
 
-Climate data downscaling is a process of estimating the impact of climate change at a local scale by combining large-scale climate models with high-resolution observations. The data folder for this application contains the following data:
+Climate data downscaling is a process of estimating the impact of climate change at a local scale by combining large-scale climate models with high-resolution observations. The [data](data) folder for this application contains the following data:
 
 - Elevation data at high resolution
 - High- and low-fidelity temperature data
@@ -12,18 +12,18 @@ The purpose of this project is to use python scripts to estimate high-fidelity w
 
 ## Methods 
 
-> save_low_elevation.py (make this a link )
->- trains a network with the highe resolution Temperature and elevation data. 
->- Using the Deep learning model, we use the low resolution temperature data to estimate the low resolution elevation data
+[save_low_elevation.py](save_low_elevation.py)
+- Trains a network with the high resolution temperature and elevation data.
+- Using the deep learning model, we use the low resolution temperature data to estimate the low resolution elevation data.
 
-> hires_u10_v10.ipynb (make this a link)
->- train a deep Neural network with low resolution wind and elevation data
->- feed the model with high resolution elevation data to estimate high resolution U10 and V10 (data saved in the output folder)
+[hires_u10_v10.ipynb](hires_u10_v10.ipynb)
+- Trains a deep neural network with low resolution wind and elevation data.
+- Feeds the model with high resolution elevation data to estimate high resolution U10 and V10 (data saved in the [output](output) folder).
 
-> error_nmbf_estimate.ipynb
->- estimating normalised mean bias factor between low resolution elevation data estimated at every time step. 
+[error_nmbf_estimate.ipynb](error_nmbf_estimate.ipynb)
+- Estimates the normalized mean bias factor between low resolution elevation data estimated at every time step.
 
->low_fidelity_elevation_3.nc : is the netcdf file containing the low resolution elevation data which was estimted using save_low_elevation.py
+[low_fidelity_elevation_3.nc](low_fidelity_elevation_3.nc): is the netCDF file containing the low resolution elevation data which was estimated using [save_low_elevation.py](save_low_elevation.py).
 
 
 ## Data Source
