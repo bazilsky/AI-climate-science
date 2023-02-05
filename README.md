@@ -12,7 +12,7 @@ The purpose of this project is to use python scripts to estimate high-fidelity w
 
 ## Methods 
 
-[save_low_elevation.py](save_low_elevation.py) and 
+[save_low_elevation.py](save_low_elevation.py)
 - Trains a network with the high resolution temperature and elevation data.
 - Using the deep learning model, we use the low resolution temperature data to estimate the low resolution elevation data.
 - [error_nmbf_estimate.ipynb](error_nmbf_estimate.ipynb) Estimates the normalized mean bias factor between low resolution elevation data estimated at every time step. This script was just to for testing. 
